@@ -5,7 +5,7 @@ import (
 	"os"
 )
 
-func ParseFile(path string) (Meta, string, error) {
+func ParseMetadata(path string) (Meta, string, error) {
 	var meta Meta
 
 	f, err := os.Open(path)
