@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"strings"
 
 	tea "github.com/charmbracelet/bubbletea"
@@ -86,17 +87,20 @@ func (m model) View() string {
 }
 
 var statusStyle = lipgloss.NewStyle().
-	Background(lipgloss.Color("#1e1e2e")). // gray
+	Background(lipgloss.Color("#11111b")). // gray
 	Foreground(lipgloss.Color("#ffffff")).
 	PaddingLeft(1).
 	PaddingRight(1)
 
 func (m model) statusBar() string {
-	left := m.meta.Title
-	right := m.meta.Author
+	// Left part: Title | Author
+	left := fmt.Sprintf("%s | %s", m.meta.Title, m.meta.Author)
+
+	// Right part: current / total
+	right := fmt.Sprintf("%d/%d", m.currentSlide+1, len(m.slides))
 
 	// Make space between left/right
-	space := m.width - len(left) - len(right) - 2
+	space := m.width - lipgloss.Width(left) - lipgloss.Width(right) - 2
 	if space < 0 {
 		space = 0
 	}
