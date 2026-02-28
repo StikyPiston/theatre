@@ -36,7 +36,7 @@
           meta = with pkgs.lib; {
             description = "A TUI presentation program using Markdown";
             license = licenses.mit;
-            platforms = platforms.linux;
+            platforms = platforms.all;
           };
         };
 
