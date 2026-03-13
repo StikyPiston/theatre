@@ -1,8 +1,3 @@
----
-author: StikyPiston
-title: theatre README/introduction
----
-
 # theatre
 
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/StikyPiston/theatre)
