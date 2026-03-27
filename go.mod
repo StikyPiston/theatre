@@ -1,4 +1,4 @@
-module github.com/stikypiston/theatre
+module github.com/indium114/theatre
 
 go 1.25.0
 

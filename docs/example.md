@@ -1,6 +1,6 @@
 ---
 title: Theatre Documentation
-author: StikyPiston
+author: indium114
 ---
 
 # Welcome to Theatre!
@@ -19,7 +19,7 @@ To install, add the input to your flake,
 
 ```nix
 inputs = {
-  theatre.url = "github:stikypiston/theatre"
+  theatre.url = "github:indium114/theatre"
 }
 ```
 
@@ -36,7 +36,7 @@ environment.systemPackages = [
 To install, simply run:
 
 ```shell
-go install github.com/stikypiston/theatre@latest
+go install github.com/indium114/theatre@latest
 ```
 
 Make sure that `~/go/bin` is in your PATH
@@ -52,7 +52,7 @@ Make sure that `~/go/bin` is in your PATH
 #### Clone the repo
 
 ```shell
-git clone https://github.com/stikypiston/theatre
+git clone https://github.com/indium114/theatre
 ```
 
 #### Build the project

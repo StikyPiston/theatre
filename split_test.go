@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/stikypiston/theatre/internal"
+	"github.com/indium114/theatre/internal"
 	"testing"
 )
 
